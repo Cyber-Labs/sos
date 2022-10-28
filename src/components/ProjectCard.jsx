@@ -20,7 +20,7 @@ function shortenText(text) {
   return finalText;
 }
 export default function ProjectCard({ details }) {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(details.id==='1'?true:false);
   const handleModalOpen = () => {
     setIsModalOpen(true);
   };
