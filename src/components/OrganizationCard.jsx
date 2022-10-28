@@ -26,7 +26,7 @@ export default function OrganzationCard({ details }) {
           <Typography gutterBottom variant="h5" component="div">
             {details.title}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" color="text.secondary" className="trimText">
             {details.description}
           </Typography>
         </CardContent>

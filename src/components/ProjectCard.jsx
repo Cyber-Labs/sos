@@ -5,20 +5,11 @@ import Typography from "@mui/material/Typography";
 import { CardActions, Button } from "@mui/material";
 import ProjectModal from "./ProjectModal";
 import { useState } from "react";
-function shortenText(text) {
-  let length = text.length;
-  let finalText = "";
-  let minLength = length;
-  if (minLength > 100) minLength = 100;
-  for (let i = 0; i < minLength; i++) {
-    finalText += text[i];
-  }
-  if (length > 100) return finalText + "...";
 
-  return finalText;
-}
 export default function ProjectCard({ details }) {
-  const [isModalOpen, setIsModalOpen] = useState(details.id==='1'?true:false);
+  const [isModalOpen, setIsModalOpen] = useState(
+    details.id === "1" ? true : false
+  );
   const handleModalOpen = () => {
     setIsModalOpen(true);
   };
@@ -36,7 +27,7 @@ export default function ProjectCard({ details }) {
           justifyContent: "space-between",
           borderRadius: "10px",
           boxShadow: "rgb(136 136 136) 0px 2px 8px",
-          m: 2
+          m: 2,
         }}
       >
         <CardContent>
@@ -46,9 +37,9 @@ export default function ProjectCard({ details }) {
           <Typography
             variant="body2"
             color="text.secondary"
-            style={{ wordWrap: "break-word" }}
+            className="trimText"
           >
-            {shortenText(details.description)}
+            {details.description}
           </Typography>
         </CardContent>
         <CardActions>

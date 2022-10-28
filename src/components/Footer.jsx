@@ -7,7 +7,7 @@ const Footer = () => {
         backgroundColor: 'black',
         textAlign: 'center',
         color: 'rgb(255,255,255,0.5)',
-        padding: '2rem',
+        padding: '1.25rem',
         fontSize: '1rem',
         position: 'absolute',
         bottom: '0',

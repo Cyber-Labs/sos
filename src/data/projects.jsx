@@ -25,8 +25,8 @@ const makeData = (
       11,
       "pro1",
       "organization!",
-      "bla bla bla",
-      [
+      "bla bla bl dlfdlfd dfl ldfkdl jdkf jlkfj dklfj lkdjf klj kljdklf jdkdfk kdlf dkfdk dfldf;d f dd;fdf dfdff dfdfld dflfdlk ffdla",
+      [ 
         "node js",
         "react",
         "mongodb",
