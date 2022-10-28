@@ -19,15 +19,15 @@ const pages = [
   },
   {
     name: "About",
-    url: "/About",
+    url: "/about",
   },
   {
     name: "Projects",
-    url: "/Projects",
+    url: "/projects",
   },
   {
     name: "Organizations",
-    url: "/Organizations",
+    url: "/organizations",
   },
 ];
 
