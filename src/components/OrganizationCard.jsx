@@ -3,20 +3,13 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import { CardActions,Button } from "@mui/material";
-import Chip from "@mui/material/Chip";
-import Stack from "@mui/material/Stack";
-import ProjectModal from "./ProjectModal";
-import { useState } from "react";
 
-export default function ProjectCard({ details }) {
+import { useNavigate } from "react-router";
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const handleModalOpen = () => {
-    setIsModalOpen(true);
-  };
-  const handleModalClose = () => {
-    setIsModalOpen(false);
-  };
+export default function OrganzationCard({ details }) {
+
+  const navigate = useNavigate();
+ 
 
   return (
     <>
@@ -32,10 +25,9 @@ export default function ProjectCard({ details }) {
           </Typography>
         </CardContent>
         <CardActions>
-        <Button  onClick={()=>handleModalOpen(true)}>Know More</Button>
+        <Button  onClick={()=>navigate(`/organizations/${details.id}`)}>Know More</Button>
       </CardActions>
     </Card>
-    <ProjectModal isModalOpen={isModalOpen} handleClose={handleModalClose} details={details}/>
     </>
   );
 }
