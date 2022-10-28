@@ -7,10 +7,10 @@ const Projects = () => {
   return (
     <>
       <Heading text="Projects" />
-      <Container maxWidth="lg" sx={{ mt: 5 }}>
+      <Container maxWidth="lg" sx={{ mt: 5, mb: 5}}>
         <Grid container>
           {projects.map((project) => (
-            <ProjectCard details={project} />
+            <ProjectCard details={project} key={project.id}/>
           ))}
         </Grid>
       </Container>

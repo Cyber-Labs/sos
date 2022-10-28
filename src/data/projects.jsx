@@ -31,10 +31,10 @@ const makeData = (
         "react",
         "mongodb",
         "express",
-        "node js",
-        "react",
-        "mongodb",
-        "express",
+        "node jsx",
+        "reactx",
+        "mongodbx",
+        "expressx",
       ],
       "https://www.github.com",
       "https://www.slack.com"
@@ -45,7 +45,7 @@ const makeData = (
       "pro2",
       "organization!",
       "bla bla bla",
-      ["node js", "react", "mongodb", "express", "node js"],
+      ["node js", "react", "mongodb", "express", "node jsx"],
       "https://www.github.com",
       "https://www.slack.com"
     ),
@@ -55,7 +55,7 @@ const makeData = (
       "xxx",
       "organization!",
       "bla bla bla",
-      ["node js", "react", "mongodb", "express", "node js"],
+      ["node js", "react", "mongodb", "express", "node jsx"],
       "https://www.github.com",
       "https://www.slack.com"
     ),

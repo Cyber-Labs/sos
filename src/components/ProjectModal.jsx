@@ -63,7 +63,7 @@ export default function ProjectModal({ isModalOpen, handleClose, details }) {
             <div style={{ marginTop: 10 }}>
               <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
                 {details.techstacks.map((name) => (
-                  <Chip label={name} color="primary" />
+                  <Chip label={name} color="primary" key={name}/>
                 ))}
               </Box>
             </div>

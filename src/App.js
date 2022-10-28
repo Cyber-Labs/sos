@@ -3,7 +3,7 @@ import React from "react";
 import { CssBaseline, Box } from "@mui/material";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home.page";
-import Organizations from "./pages/Organizatons.page";
+import Organizations from "./pages/Organizations.page";
 import Organization from "./components/Organization";
 import Projects from "./pages/Projects.page";
 import Footer from "./components/Footer";

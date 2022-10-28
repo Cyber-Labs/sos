@@ -8,9 +8,9 @@ const Organizations = () => {
     <>
       <Heading text="Organizations" />
       <Container maxWidth="lg">
-        <Grid container spacing={2} sx={{mt: 3}}>
+        <Grid container spacing={2} sx={{mt: 5, mb: 5}}>
           {organizations.map((organization) => (
-            <OrganizationCard details={organization} />
+            <OrganizationCard details={organization} key={organization.id}/>
           ))}
         </Grid>
       </Container>

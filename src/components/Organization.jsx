@@ -26,12 +26,12 @@ const Organization = () => {
           <Container maxWidth="lg">
             <div style={{ marginTop: 10 }}>{organization.description}</div>
             <div style={{ marginTop: 10 }}>
-              <h1>Projects</h1>
+              <h1 style={{fontFamily:'monospace'}}>Projects</h1>
               <Grid container spacing={2}>
                 {projects
                   .filter((project) => project.orgId === organization.id)
                   .map((project) => (
-                    <ProjectCard details={project} />
+                    <ProjectCard details={project} key={project.id} />
                   ))}
               </Grid>
             </div>

@@ -44,7 +44,7 @@ const CountDown = () => {
           color: "#fff",
           fontWeight: "700",
           marginY: "1.5rem",
-          "font-family": "monospace !important",
+          fontFamily: "monospace !important",
           px: 2
         }}
       >
