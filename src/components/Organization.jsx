@@ -20,27 +20,24 @@ const Organization = () => {
   }, []);
   return (
     <>
-    {organization && <>
-        <Heading text={organization.title} />
-      <Container maxWidth='lg'>
-      <div style={{marginTop:10}}>
-            {organization.description}
-      </div>
-      <div style={{marginTop:10}}>
-        <h1>Projects</h1>
-      <Grid container spacing={2}>
-          {projects
-            .filter((project) => project.orgId === organization.id)
-            .map((project) =>
-              <Grid key={project.id} item xs={4} sx={{ display: "flex" }}>
-                <ProjectCard details={project} />
-              </Grid>)}
-        </Grid>
-      </div>
-        
-      </Container>
-    </>}
-     
+      {organization && (
+        <>
+          <Heading text={organization.title} />
+          <Container maxWidth="lg">
+            <div style={{ marginTop: 10 }}>{organization.description}</div>
+            <div style={{ marginTop: 10 }}>
+              <h1>Projects</h1>
+              <Grid container spacing={2}>
+                {projects
+                  .filter((project) => project.orgId === organization.id)
+                  .map((project) => (
+                    <ProjectCard details={project} />
+                  ))}
+              </Grid>
+            </div>
+          </Container>
+        </>
+      )}
     </>
   );
 };
