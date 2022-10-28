@@ -21,9 +21,9 @@ const makeData = (
   };
   const projects = [
     makeData(
-      "1",
-      "org1",
-      "xxx",
+      1,
+      11,
+      "pro1",
       "organization!",
       "bla bla bla",
       [
@@ -40,9 +40,9 @@ const makeData = (
       "https://www.slack.com"
     ),
     makeData(
-      "2",
-      "org2",
-      "xxx",
+      2,
+      22,
+      "pro2",
       "organization!",
       "bla bla bla",
       ["node js", "react", "mongodb", "express", "node js"],
