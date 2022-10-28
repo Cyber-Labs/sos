@@ -49,6 +49,16 @@ const makeData = (
       "https://www.github.com",
       "https://www.slack.com"
     ),
+    makeData(
+      "3",
+      "org3",
+      "xxx",
+      "organization!",
+      "bla bla bla",
+      ["node js", "react", "mongodb", "express", "node js"],
+      "https://www.github.com",
+      "https://www.slack.com"
+    ),
   ];
   
   export default projects;
