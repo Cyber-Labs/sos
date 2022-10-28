@@ -35,7 +35,6 @@ const CountDown = () => {
   const match = useMediaQuery('(min-width:600px)');
   const navigate = useNavigate();
   // const loggedIn = useSelector((store) => store.user.loggedIn);
-  const loggedIn = true;
   return (
     <StyledBox>
       <Typography
