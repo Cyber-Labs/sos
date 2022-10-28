@@ -3,8 +3,6 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import { CardActions, Button } from "@mui/material";
-import Chip from "@mui/material/Chip";
-import Stack from "@mui/material/Stack";
 import ProjectModal from "./ProjectModal";
 import { useState } from "react";
 function shortenText(text) {
