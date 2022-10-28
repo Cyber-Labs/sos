@@ -7,21 +7,7 @@ import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 import ProjectModal from "./ProjectModal";
 import { useState } from "react";
-function shortenText(text)
-{
-    let length = text.length;
-    let finalText = "";
-    let minLength = length;
-    if(minLength > 100) minLength = 100;
-    for(let i=0;i<minLength;i++)
-    {
-        finalText += text[i];
-    }
-    if(length > 100)
-    return finalText + "...";
 
-    return finalText;
-}
 export default function ProjectCard({ details }) {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -41,8 +27,8 @@ export default function ProjectCard({ details }) {
           <Typography gutterBottom variant='h5' component='div'>
             {details.title}
           </Typography>
-          <Typography variant='body2' color='text.secondary' style={{wordWrap:'break-word'}}>
-            {shortenText(details.description)}
+          <Typography variant='body2' color='text.secondary'>
+            {details.description}
           </Typography>
         </CardContent>
         <CardActions>

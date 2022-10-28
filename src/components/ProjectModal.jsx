@@ -5,7 +5,7 @@ import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import {  Divider } from '@mui/material';
+import {  Divider,Stack,Chip } from '@mui/material';
 
 
 const style = {
@@ -26,7 +26,7 @@ const style = {
 
 
 
-export default function ProjectModal({ isModalOpen, handleClose }) {
+export default function ProjectModal({ isModalOpen, handleClose,details }) {
  
   return (
     <div>
@@ -40,20 +40,40 @@ export default function ProjectModal({ isModalOpen, handleClose }) {
         BackdropProps={{
           timeout: 500,
         }}
+        
       >
         <Fade in={isModalOpen}>
-          <Box sx={style}>
+          <Box sx={style} style={{width:900,maxHeight:400,overflow:'auto'}}>
             <Typography
               id="transition-modal-title"
               variant="h3"
               component="h2"
-              style={{ textAlign: 'center' }}
             >
-              Instructions
+              {details.title}
             </Typography>
             <Divider variant="middle" />
-
+            <div style={{marginTop:10}}>
+            <Chip label={details.organization} color="success" />
+            </div>
             
+            <div style={{marginTop:10}}>
+            {details.description}
+            </div>
+          <div style={{marginTop:10}}>
+          <Stack direction='row' sx={{ flexWrap: 'wrap', gap:1 }}>
+              {details.techstacks.map((name) => 
+              <Chip label={name} color='primary'/>
+              )}
+            </Stack>
+          </div>
+
+          <div style={{marginTop:10}}>
+             <b><a href={details.github} target='__blank' sytle={{textDecoration:'none'}}>Github</a></b>
+          </div>
+          <div style={{marginTop:10}}>
+             <b><a href={details.slack} target='__blank' sytle={{textDecoration:'none'}}>Slack Channel</a></b>
+          </div>
+           
           </Box>
         </Fade>
       </Modal>

@@ -1,0 +1,6 @@
+*{
+    font-family: monospace !important; 
+    font-size:large;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
