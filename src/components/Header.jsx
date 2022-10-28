@@ -45,6 +45,7 @@ const CountDown = () => {
           fontWeight: "700",
           marginY: "1.5rem",
           "font-family": "monospace !important",
+          px: 2
         }}
       >
         Welcome To The Season Of Open Source

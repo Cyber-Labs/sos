@@ -43,6 +43,7 @@ const About = () => {
             justifyContent: "space-around",
             alignItems: "center",
             mt: 5,
+            mx: 2,
             fontSize: "1.2em",
             lineHeight: "1.75em",
             letterSpacing: "1.25px",
@@ -56,7 +57,7 @@ const About = () => {
             sx={{
               width: "50%",
               pl: 10,
-              transform: 'translateX(-50px)',
+              // transform: 'translateX(-50px)',
               "@media (max-width: 1000px)": {
                 width: "100%",
                 px: 2,
