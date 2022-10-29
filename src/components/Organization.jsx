@@ -5,8 +5,8 @@ import ProjectCard from "./ProjectCard";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router";
-import organizations from "../data/organizations";
-import projects from "../data/projects";
+import organizations from "../data/orgData";
+import projects from "../data/projectData";
 const Organization = () => {
   const { orgId } = useParams();
 

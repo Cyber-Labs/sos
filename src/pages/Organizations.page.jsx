@@ -1,6 +1,6 @@
 import React from "react";
 import Heading from "../components/Heading";
-import organizations from "../data/organizations";
+import organizations from "../data/orgData";
 import OrganizationCard from "../components/OrganizationCard";
 import { Container, Grid } from "@mui/material";
 const Organizations = () => {

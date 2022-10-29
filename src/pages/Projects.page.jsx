@@ -2,7 +2,7 @@ import { Grid, Container } from "@mui/material";
 import React from "react";
 import Heading from "../components/Heading";
 import ProjectCard from "../components/ProjectCard";
-import projects from "../data/projects";
+import projects from "../data/projectData";
 const Projects = () => {
   return (
     <>
