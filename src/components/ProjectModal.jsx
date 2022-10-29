@@ -1,11 +1,11 @@
-import * as React from "react";
-import Backdrop from "@mui/material/Backdrop";
-import Box from "@mui/material/Box";
-import Modal from "@mui/material/Modal";
-import Fade from "@mui/material/Fade";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import { Divider, Stack, Chip } from "@mui/material";
+import * as React from 'react';
+import Backdrop from '@mui/material/Backdrop';
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
+import Fade from '@mui/material/Fade';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import { Divider, Stack, Chip } from '@mui/material';
 
 const style = {
   // position: "absolute",
@@ -19,19 +19,19 @@ const style = {
   // height: 500,
   // overflow: "auto",
   // textAlign: "justify",
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: "content",
-  // minWidth: "450px",
-  bgcolor: "background.paper",
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  // width: 'content',
+  width: '70%',
+  bgcolor: 'background.paper',
   boxShadow:
-    "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-  borderRadius: "10px",
+    '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+  borderRadius: '10px',
   p: 4,
-  "@media (max-width: 550px)": {
-    width: "90%",
+  '@media (max-width: 550px)': {
+    width: '90%',
   },
 };
 
@@ -61,9 +61,9 @@ export default function ProjectModal({ isModalOpen, handleClose, details }) {
 
             <div style={{ marginTop: 10 }}>{details.description}</div>
             <div style={{ marginTop: 10 }}>
-              <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
+              <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
                 {details.techstacks.map((name) => (
-                  <Chip label={name} color="primary" key={name}/>
+                  <Chip label={name} color="primary" key={name} />
                 ))}
               </Box>
             </div>
@@ -73,7 +73,7 @@ export default function ProjectModal({ isModalOpen, handleClose, details }) {
                 <a
                   href={details.github}
                   target="__blank"
-                  sytle={{ textDecoration: "none" }}
+                  sytle={{ textDecoration: 'none' }}
                 >
                   Github
                 </a>
@@ -84,7 +84,7 @@ export default function ProjectModal({ isModalOpen, handleClose, details }) {
                 <a
                   href={details.slack}
                   target="__blank"
-                  sytle={{ textDecoration: "none" }}
+                  sytle={{ textDecoration: 'none' }}
                 >
                   Slack Channel
                 </a>
