@@ -11,7 +11,7 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/sos">
       <CssBaseline />
       <Box sx={{ position: "relative", minHeight: "100vh" }}>
         <Navbar />
