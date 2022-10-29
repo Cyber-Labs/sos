@@ -64,19 +64,9 @@ const About = () => {
               },
             }}
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-            deleniti ratione, rerum animi ab beatae aut incidunt tempore
-            eligendi temporibus repudiandae eveniet perferendis distinctio!
-            Consequatur, qui quae dolorem libero quis quo reiciendis vero
-            laudantium alias quia nesciunt dignissimos ab, consequuntur laborum
-            earum natus architecto expedita praesentium. Culpa excepturi hic
-            dicta, at ut eligendi alias iste minima voluptas ab quidem deserunt
-            sed possimus, unde quam. Officiis mollitia quidem dolores
-            praesentium. Voluptate necessitatibus, nihil sapiente perspiciatis
-            expedita inventore illum aliquid porro dicta doloribus laboriosam
-            quis, qui nobis molestiae magnam harum esse repellendus modi,
-            accusantium debitis! Dolorem aliquam quod, quisquam facilis possimus
-            quis.
+Season of Open Source is a one-month-long online program for students who are new to open-source software development. The program not only helps students to get involved in open source but also prepares them for many open source summer programs, Google Summer of Code being one of them.
+          SOS provides a great opportunity to get acquainted with Github along with Git commands and contribute to open source efficiently. Brush up your coding skills.
+          If you love coding and want to learn about software development then SOS helps you to get a glimpse of it and gives you a head start.
           </Box>
           <Box
             sx={{
